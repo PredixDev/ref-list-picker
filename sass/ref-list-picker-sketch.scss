@@ -1,0 +1,129 @@
+/*
+ * Copyright (c) 2014 GE Global Research. All rights reserved.
+ *
+ * The copyright to the computer software herein is the property of
+ * GE Global Research. The software may be used and/or copied only
+ * with the written permission of GE Global Research or in accordance
+ * with the terms and conditions stipulated in the agreement/contract
+ * under which the software has been supplied.
+ */
+
+//
+// Sass for the "sketch" notion of the ref-list-picker component
+//
+// @author
+//
+
+/*
+THIS FILE SHOULD CONTAIN ONLY ABSTRACT/'SKETCH' THEME RULES, NOT SPECIFIC TO PREDIX BRANDING
+Predix branding rules go in ref-list-picker-predix.scss, not in this file.
+*/
+
+
+
+// Generic
+@import "px-normalize-design/_generic.normalize.scss";
+@import "px-box-sizing-design/_generic.box-sizing.scss";
+@import "px-helpers-design/_generic.helpers.scss";
+
+// Base
+@import "px-flexbox-design/_base.flexbox.scss";
+@import "px-viewport-design/_base.viewport.scss";
+@import "px-typography-design/_base.typography.scss";
+
+
+// TODO: remove this?
+@import "px-meta-lists-design/_meta.lists.scss";
+
+$inuit-enable-toggle--small : true;
+//$inuit-toggle-color : $dv-basic-green;
+//$inuit-toggle-background--on: $dv-basic-green !default;
+@import "px-toggle-design/_objects.toggle.scss";
+
+$inuit-enable-layout--right : true;
+@import "px-layout-design/_objects.layout.scss";
+
+// Component
+.list-picker-label {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+.list-picker-item {
+  padding-bottom: 1em;
+}
+
+// These toggle colors must be in the same order as colors in the px-ts-chart
+.color0 .toggle__input.ref-list-picker:checked + .toggle__label.ref-list-picker:before {
+  background-color: $dv-basic-blue;
+}
+.color1 .toggle__input.ref-list-picker:checked + .toggle__label.ref-list-picker:before {
+  background-color: $dv-basic-orange;
+}
+.color2 .toggle__input.ref-list-picker:checked + .toggle__label.ref-list-picker:before {
+  background-color: $dv-basic-green;
+}
+.color3 .toggle__input.ref-list-picker:checked + .toggle__label.ref-list-picker:before {
+  background-color: $dv-basic-pink;
+}
+.color4 .toggle__input.ref-list-picker:checked + .toggle__label.ref-list-picker:before {
+  background-color: $dv-basic-brown;
+}
+.color5 .toggle__input.ref-list-picker:checked + .toggle__label.ref-list-picker:before {
+  background-color: $dv-basic-purple;
+}
+.color6 .toggle__input.ref-list-picker:checked + .toggle__label.ref-list-picker:before {
+  background-color: $dv-basic-yellow;
+}
+.color7 .toggle__input.ref-list-picker:checked + .toggle__label.ref-list-picker:before {
+  background-color: $dv-basic-red;
+}
+.color8 .toggle__input.ref-list-picker:checked + .toggle__label.ref-list-picker:before {
+  background-color: $dv-basic-gray;
+}
+
+// this is outline color
+.color0 .toggle__input.ref-list-picker:checked + .toggle__label.ref-list-picker {
+  background-color: $dv-dark-blue;
+}
+.color1 .toggle__input.ref-list-picker:checked + .toggle__label.ref-list-picker {
+  background-color: $dv-dark-orange;
+}
+.color2 .toggle__input.ref-list-picker:checked + .toggle__label.ref-list-picker {
+  background-color: $dv-dark-green;
+}
+.color3 .toggle__input.ref-list-picker:checked + .toggle__label.ref-list-picker {
+  background-color: $dv-dark-pink;
+}
+.color4 .toggle__input.ref-list-picker:checked + .toggle__label.ref-list-picker {
+  background-color: $dv-dark-brown;
+}
+.color5 .toggle__input.ref-list-picker:checked + .toggle__label.ref-list-picker {
+  background-color: $dv-dark-purple;
+}
+.color6 .toggle__input.ref-list-picker:checked + .toggle__label.ref-list-picker {
+  background-color: $dv-dark-yellow;
+}
+.color7 .toggle__input.ref-list-picker:checked + .toggle__label.ref-list-picker {
+  background-color: $dv-dark-red;
+}
+.color8 .toggle__input.ref-list-picker:checked + .toggle__label.ref-list-picker {
+  background-color: $dv-dark-gray;
+}
+
+/*
+.circle {
+  cursor: pointer;
+  user-select: none;
+  border: 5px black dashed;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1.25rem .4rem .4rem .4rem;
+  border-radius: 50%;
+}
+*/
+
+// Trumps
+@import "inuit-clearfix/_trumps.clearfix.scss";
+@import "px-spacing-responsive-design/_trumps.spacing-responsive.scss";
+@import "px-widths-responsive-design/_trumps.widths-responsive.scss";
